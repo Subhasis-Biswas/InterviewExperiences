@@ -32,6 +32,16 @@
 \maketitle
 \tableofcontents
 
+\section*{Forewords}
+
+The content to follow is a collection of my pesronal interview experiences with various companies, preliminary focusing on data science roles that spans from old-school statistical methods to modern day transformer architecture.
+
+The summer internship activity started in Jan, 2024 and lasted till Aug 1st (document verification, portal opening, PPTs, and the end-date of the internships). The placement season activity followed really soon, in August itself.
+
+Under the respective major sections, (i.e. placements/internships) the companies are listed in chronological order of arrival/interview. For the interviews taking place on the same day (Wells Fargo and OLA), the order is decided by which one of the interviews started earlier for me. 
+
+\textit{Disclaimer: The experiences listed below are solely personal. The reader's experiences might be entirely different even for the identical roles as the landscape evolves with time. No generic advice/suggestions are provided in this document, since this is intended to serve as a catalogue of the exchanges that took place.}
+
 \section{Personal Background}
 \
 \textbf{Final Placements: }MSc in Mathematics, with the Computational and Data Sciences MTech degree on top. 
@@ -42,8 +52,85 @@ Other projects involved showcasing classical ML proficiency, vision transformer,
 \newline
 \textbf{Internship:} Essence was same, but projects were different and very few- one on live hand gesture recognition, one on customers' behavioral pattern recognition and a simple project of building feedforward neural network from scratch using numpy. SVD project and the other very simple grassroots level projects were present here as well.
 
+\section{Placement Interview Experiences}
+\subsection{Wells Fargo}
+\textbf{Role:} Quantitative Analyst
+\newline
+\textbf{Personal View}: Involves much more theoretical depth than generic AI/ML roles. Leans heavily towards traditional statistical ways of financial modelling.
+\newline
+\textbf{Status:} Shortlisted through in-person online test (also called hybrid mode). Test venue was EE Department. Was selected for this role. Accepted and Froze.
+\newline
+\textbf{Interview Mode:} Physical (\href{https://maps.app.goo.gl/jMx4j9REmH2mdeeA6}{Venue})
+\newline
+\textbf{Slot:} 1st
+\vspace{10pt}
+\newline
+\underline{\textbf{Interview Description}}
+\newline
+\newline
+Round 1: 
+
+Educational Background of the Interviewer (only one member): Physics
+
+Project Specific Discussions: Almost none.
+
+\begin{itemize}
+    \item Check number palindrome using and without using strings
+    \item Lilypads grow at an exponential rate over a pond. If it gets filled in days X, what is the number of days till it gets filled given the current coverage is Y
+    \item Familiarity with Fourier Transforms
+    \item How to use Fourier Transforms for solving PDEs
+    \item Heat-Kernel usage for solving heat equation
+    \item Finite difference methods for ODEs
+    \item If $toss \in \{1,2,3\}$ take money and game stops. If $toss \in \{4,5,6\}$ take money and game continues. Expected reward?
+    \item A matrix $A$ given. Perform $f(A)$ without using repeated direct matrix multiplication, rather simpler arithmetic operations. [Idea/Clarification: If $A$ is diagonalizable, $A=PDP^{-1}$. If $f(x) \in R[x]$ for some ring $R$, then $f(A)=Pf(D)P^{-1}$. In simpler words, if $f(x)$ is a polynomial the equality holds.]
+    \item What is the density function of $Z=X+Y$, where $X, Y \sim U[0,1]$ 
+\end{itemize}
+
+Side discussion: Basic familiarity with random processes. Drift+Diffusion in Geometric Brownian Motion.
+
+Got almost everything right. Whenever I was not right, explained intuitively.
+\vspace{15pt}\
+\newline
+Round 2:
+
+Different interviewers (two members), with a long history in this domain. Educational background was MBA (most likely).
+
+\begin{itemize}
+    \item High-level explanation of Internship and MTech projects
+    \item CV looked GenAI inclined. Why more traditional ways? [Reason: My personal background]
+    \item Explain MTech topic a bit more. [Noise is not exactly white, oftentimes an autocorrelated process. Described ways to simulate noise added measurements of a (deterministic) dynamical system with given initial conditions. Also details on AER co-ordinate system used for satellite-pass observations.]
+    \item Explain assumptions for logistic regression. Tell MLE setup.
+    \item Cross entropy loss for perfect classifer
+    \item If all features are zero, find out bias if label is 1, in relation to Logistic Function. [Note: Function, not Regression.]
+    \item Expectation of $X$ conditioned on a filtration of $Y$ [Couldn't solve exactly. But stated the relation to martingales]
+    \item Interviewers affirmed relevance of the tools used in my CV within the domain.
+    \item I asked about good books to get started with. [Recommended Author: Steven E. Shreve]
+\end{itemize}
+
+Personally speaking, I fell short of my own expectations and underperformed. I did not almost anything at all about financial theory, so couldn't exactly get familiar with their line of work. But intuitively I understood their role and my expected responsibilities. 
+
+
+\vspace{15pt}\
+\newline
+Round 3: HR
+
+\begin{itemize}
+    \item Why two Masters' degrees? Job opportunity in prior degree.
+    \item Why did I not get PPO from Fidelity internship?
+    \item Why not academia/UPSC? 
+    \item Preparation mindset/strategy for competitive exam?
+    \item Inquired if I knew the salary structure. Restated the salary structure once again. [I responded that I was aware from the job description on OCCAP portal.]
+    \item Stated that I have to wait till 4-4:30PM for the results.
+\end{itemize}
+
+
+
+
+
+
+
 % Main content
-\section{OLA Final Placements Interview Experience}
+\subsection{OLA}
 
 
 \textbf{Role:} AI/ML Engineer
@@ -53,6 +140,8 @@ Other projects involved showcasing classical ML proficiency, vision transformer,
 \textbf{Status:} Shortlisted through online test. Didn't proceed to the second technical round.
 \newline
 \textbf{Interview Mode:} Virtual (Zoom Call)
+\newline
+\textbf{Slot:} 1st
 \vspace{10pt}
 \newline
 \underline{\textbf{Interview Description}}
@@ -81,34 +170,41 @@ Finally the coding question:
 \textbf{Possible Cause of Rejection:} Unknown. Was very positive about the interview.
 
 
-\section{Fidelity Internship Interview Experience}
+\section{Internship Interview Experiences}
 
-
-
-\textbf{Role:} AI/ML Intern
+\subsection{KLA}
+\textbf{Role:} Optics Expert with PINNs Experience
 \newline
-\textbf{Personal View}: Could've been anything, from GenAI to Statistical Causal Inference.
+\textbf{Personal View}: Mainly a role for a physicist with good grasp on electromagnetism
 \newline
-\textbf{Status:} CV Shortlisted. Selected after two technical and one HR round.
+\textbf{Status:} Shortlisted through online test. Rejected in the first round.
 \newline
 \textbf{Interview Mode:} Physical (OCCAP)
+\newline
+\textbf{Slot:} Open
 \vspace{10pt}
 \newline
 \underline{\textbf{Interview Description}}
 \newline
+After a mutual introduction I was told straight away that my resume did not match what they were looking for. Interviewer still asked a few questions from advanced mathematics \& basic physics to respect the spirit of the interview. For example:
 
-The interview began with a series of technical questions. The first round opened with an introduction, followed by a discussion on a project regarding live hand gesture recognition-  probing into its purpose, handling different hand orientations, and the model parameters involved. The interview further explored how the accuracy of class identification was verified, comparing ReLU with Sigmoid functions in neural networks. 
-Then discussion moved onto the project on customer purchase patterns including the features considered and analysis techniques like Cramer's V. There were also questions on statistical tests for association, such as the Chi-Square test, ANOVA, Kruskal-Wallis test, and MANOVA, as well as the structure of unsupervised learning algorithms applied in the project, including GMM and KMeans.
+\begin{itemize}
+    \item Can you please state the Maxwell's Laws?
+    \item How do you solve such equations?
+    \item Are you familiar with Fourier Optics?
+    \item Do you know about the Heine-Borel Theorem?
+    \item Can you please explain the Bolzano-Weierstrass Theorem?
+\end{itemize}
 
-Note that these statistical tests are not at all strictly necessary to qualify. These are just add-ons to the arsenal of hypothesis testing.
+We parted ways on good terms afterwards.
+\newline
+\vspace{1pt}\
+\newline
+\textbf{Cause of Rejection:} Severe background mismatch.
 
-The second technical round began with a similar introduction and focused on topics like implementing backpropagation from scratch, matrix multiplication in neural networks, and the impact of dropout on matrices. Logistic regression and its assumptions were covered, alongside the pseudocode for solving a Sudoku problem. The round also included questions on PCA and the significance of using unitary/orthogonal matrices in the process.
 
-The HR round continued with questions about the candidate's background, projects, motivations for transitioning from academia to industry, expectations from the intern role, and any questions for the company. 
 
-The interview concluded with a selection decision. All rounds were conducted in person.
-
-\section{Amazon Internship Interview Experience}
+\subsection{Amazon}
 
 \textbf{Role:} Applied Scientist Intern (AI/ML)
 \newline
@@ -117,6 +213,9 @@ The interview concluded with a selection decision. All rounds were conducted in 
 \textbf{Status:} Shortlisted through online coding and behavioral test. Rejected straight after the live coding round.
 \newline
 \textbf{Interview Mode:} Virtual (Amazon Chime)
+\newline
+\textbf{Slot:} 1st
+\newline
 \vspace{10pt}
 \newline
 \underline{\textbf{Interview Description}}
@@ -131,7 +230,7 @@ DSA Problems asked:
 \textbf{Possible Cause of Rejection:} Complete lack of familiarity with even the most basic DSA concepts. 
 
 
-\section{Flipkart Internship Interview Experience}
+\subsection{Flipkart}
 \textbf{Role:} Applied Scientist Intern (AI/ML)
 \newline
 \textbf{Personal View}: -
@@ -139,6 +238,9 @@ DSA Problems asked:
 \textbf{Status:} Shortlisted through online test. Qualified first technical round. Failed in the second.
 \newline
 \textbf{Interview Mode:} Virtual
+\newline
+\textbf{Slot:} 1st
+\newline
 \vspace{10pt}
 \newline
 \underline{\textbf{Interview Description}}
@@ -157,31 +259,40 @@ Suppose you have the \textit{Star Rating}, \textit{User Reviews}, \textit{Search
 \textbf{Possible Cause of Rejection:} Dove head-first into a very crude machine-learning approach without clarifying the metrics, objectives etc. Should have taken more time and prepared the groundwork for building up the case study. Due to lack of awareness, the discussion went quite a bit in circles without making any significant advancements towards the solution idea.
 
 
-\section{KLA Internship Interview Experience}
-\textbf{Role:} Optics Expert with PINNs Experience
+
+
+
+\subsection{Fidelity}
+
+\textbf{Role:} AI/ML Intern
 \newline
-\textbf{Personal View}: Mainly a role for a physicist with good grasp on electromagnetism
+\textbf{Personal View}: Could've been anything, from GenAI to Statistical Causal Inference.
 \newline
-\textbf{Status:} Shortlisted through online test. Rejected in the first round.
+\textbf{Status:} CV Shortlisted. Selected after two technical and one HR round.
 \newline
 \textbf{Interview Mode:} Physical (OCCAP)
+\newline
+\textbf{Slot:} 2nd
+\newline
 \vspace{10pt}
 \newline
 \underline{\textbf{Interview Description}}
 \newline
-After a mutual introduction I was told straight away that my resume did not match what they were looking for. Interviewer still asked a few questions from advanced mathematics \& basic physics to respect the spirit of the interview. For example:
 
-\begin{itemize}
-    \item Can you please state the Maxwell's Laws?
-    \item How do you solve such equations?
-    \item Are you familiar with Fourier Optics?
-    \item Do you know about the Heine-Borel Theorem?
-    \item Can you please explain the Bolzano-Weierstrass Theorem?
-\end{itemize}
+The interview began with a series of technical questions. The first round opened with an introduction, followed by a discussion on a project regarding live hand gesture recognition-  probing into its purpose, handling different hand orientations, and the model parameters involved. The interview further explored how the accuracy of class identification was verified, comparing ReLU with Sigmoid functions in neural networks. 
+Then discussion moved onto the project on customer purchase patterns including the features considered and analysis techniques like Cramer's V. There were also questions on statistical tests for association, such as the Chi-Square test, ANOVA, Kruskal-Wallis test, and MANOVA, as well as the structure of unsupervised learning algorithms applied in the project, including GMM and KMeans.
 
-We parted ways on good terms afterwards.
+Note that these statistical tests are not at all strictly necessary to qualify. These are just add-ons to the arsenal of hypothesis testing.
 
-\textbf{Cause of Rejection:} Severe background mismatch.
+The second technical round began with a similar introduction and focused on topics like implementing backpropagation from scratch, matrix multiplication in neural networks, and the impact of dropout on matrices. Logistic regression and its assumptions were covered, alongside the pseudocode for solving a Sudoku problem. The round also included questions on PCA and the significance of using unitary/orthogonal matrices in the process.
+
+The HR round continued with questions about the candidate's background, projects, motivations for transitioning from academia to industry, expectations from the intern role, and any questions for the company. 
+
+The interview concluded with a selection decision. All rounds were conducted in person.
+
+
+
+
 
 
 \end{document}
