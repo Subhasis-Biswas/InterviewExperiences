@@ -1,0 +1,187 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage[utf8]{inputenc} % For encoding
+\usepackage{amsmath}        % For math symbols
+\usepackage{amssymb}        % For more math symbols
+\usepackage{geometry}       % For page layout
+\usepackage{hyperref}       % For hyperlinks
+\usepackage{enumerate}      % For numbered lists
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+
+% Page layout settings
+\geometry{a4paper, margin=1in}
+
+% Title, Author, Date
+\title{Interview Experiences}
+\author{Subhasis Biswas}
+\date{\today} % Use \date{} for no date
+
+\begin{document}
+
+% Title page
+\maketitle
+\tableofcontents
+
+\section{Personal Background}
+\
+\textbf{Final Placements: }MSc in Mathematics, with the Computational and Data Sciences MTech degree on top. 
+Did my summer internship in Fidelity on LLM Guardrails (contemporarily very active topic). 
+MTech thesis was on noise characterization of radar observations (partly in collaboration with DRDO).
+Other projects involved showcasing classical ML proficiency, vision transformer, character level GPT (NanoGPT-Andrej Karpathy). Some `from scratch' projects like `linear regression from scratch' etc were also there. And one project on using SVD as image compressor.
+\newline
+\newline
+\textbf{Internship:} Essence was same, but projects were different and very few- one on live hand gesture recognition, one on customers' behavioral pattern recognition and a simple project of building feedforward neural network from scratch using numpy. SVD project and the other very simple grassroots level projects were present here as well.
+
+% Main content
+\section{OLA Final Placements Interview Experience}
+
+
+\textbf{Role:} AI/ML Engineer
+\newline
+\textbf{Personal View}: Less theoretical, more of DevOPs + AI/ML mix.
+\newline
+\textbf{Status:} Shortlisted through online test. Didn't proceed to the second technical round.
+\newline
+\textbf{Interview Mode:} Virtual (Zoom Call)
+\vspace{10pt}
+\newline
+\underline{\textbf{Interview Description}}
+\newline
+Started with a generic brief mutual introduction. Interviewer worked on OLA Krutrim LLM related stuff. Asked me regarding the overall architecture of my intership product. As evident from the topic of the internship, it was on safeguarding LLMs from misusages and hallucinations etc; I was also asked about the prospects of its scalability. Then I was asked about my MTech project.
+
+Topic then moved to ViT, the overall patching of the images (\href{https://arxiv.org/abs/2010.11929}{An Image is Worth 16x16 Words}) and the high-level overview of the model architecture. Questions on class imbalance scenarios and their possible mitigations. 
+
+Conversation then shifted to general very in-depth transformer architecture. Was asked to implement a single self attention unit (used torch). It was being coded live.
+\newline
+Then some questions as follows:
+ \begin{itemize}
+    \item A model with a quite high parameter count is being trained on a small dataset, what is expected to happen?
+    \item How to detect overfitting?
+    \item How to prevent? 
+    \item Is accuracy a good metric in all scenarios?
+    \item Explain AUC-ROC.
+ \end{itemize}
+
+Finally the coding question:
+
+\textit{If the letters in a string \textbf{s} is shifted by a certain fixed amount, say \textbf{k}, then it can act as an encrypter. Write out the functions to produce the encrypted string and from the encrypted string, decode the original given the key.}
+\newline
+\vspace{1pt}\
+\newline
+\textbf{Possible Cause of Rejection:} Unknown. Was very positive about the interview.
+
+
+\section{Fidelity Internship Interview Experience}
+
+
+
+\textbf{Role:} AI/ML Intern
+\newline
+\textbf{Personal View}: Could've been anything, from GenAI to Statistical Causal Inference.
+\newline
+\textbf{Status:} CV Shortlisted. Selected after two technical and one HR round.
+\newline
+\textbf{Interview Mode:} Physical (OCCAP)
+\vspace{10pt}
+\newline
+\underline{\textbf{Interview Description}}
+\newline
+
+The interview began with a series of technical questions. The first round opened with an introduction, followed by a discussion on a project regarding live hand gesture recognition-  probing into its purpose, handling different hand orientations, and the model parameters involved. The interview further explored how the accuracy of class identification was verified, comparing ReLU with Sigmoid functions in neural networks. 
+Then discussion moved onto the project on customer purchase patterns including the features considered and analysis techniques like Cramer's V. There were also questions on statistical tests for association, such as the Chi-Square test, ANOVA, Kruskal-Wallis test, and MANOVA, as well as the structure of unsupervised learning algorithms applied in the project, including GMM and KMeans.
+
+Note that these statistical tests are not at all strictly necessary to qualify. These are just add-ons to the arsenal of hypothesis testing.
+
+The second technical round began with a similar introduction and focused on topics like implementing backpropagation from scratch, matrix multiplication in neural networks, and the impact of dropout on matrices. Logistic regression and its assumptions were covered, alongside the pseudocode for solving a Sudoku problem. The round also included questions on PCA and the significance of using unitary/orthogonal matrices in the process.
+
+The HR round continued with questions about the candidate's background, projects, motivations for transitioning from academia to industry, expectations from the intern role, and any questions for the company. 
+
+The interview concluded with a selection decision. All rounds were conducted in person.
+
+\section{Amazon Internship Interview Experience}
+
+\textbf{Role:} Applied Scientist Intern (AI/ML)
+\newline
+\textbf{Personal View}: -
+\newline
+\textbf{Status:} Shortlisted through online coding and behavioral test. Rejected straight after the live coding round.
+\newline
+\textbf{Interview Mode:} Virtual (Amazon Chime)
+\vspace{10pt}
+\newline
+\underline{\textbf{Interview Description}}
+\newline
+
+DSA Problems asked:
+\begin{itemize}
+    \item Suppose students $s_1, \dots, s_n$ must use laptops for $[a_1, b_1], \dots, [a_n, b_n]$ time intervals respectively and no simultaneous sharing is involved amongst students. Figure out the least amount of laptops required to achieve this.
+    \item Binary Tree in-order traversal.
+\end{itemize}
+
+\textbf{Possible Cause of Rejection:} Complete lack of familiarity with even the most basic DSA concepts. 
+
+
+\section{Flipkart Internship Interview Experience}
+\textbf{Role:} Applied Scientist Intern (AI/ML)
+\newline
+\textbf{Personal View}: -
+\newline
+\textbf{Status:} Shortlisted through online test. Qualified first technical round. Failed in the second.
+\newline
+\textbf{Interview Mode:} Virtual
+\vspace{10pt}
+\newline
+\underline{\textbf{Interview Description}}
+\newline
+
+First Round:
+
+The interview began with a discussion on logistic regression, including its principles/assumptions and how it is optimized. There was a focus on strategies for handling large batch sizes during training, as well as approaches for dealing with categorical variables. The interview further delved into evaluation metrics such as precision, recall, and the confusion matrix. Additionally, the drawbacks of using activation functions like Sigmoid and ReLU in neural networks were discussed.
+
+Second Round: Case Study Round
+
+Suppose you have the \textit{Star Rating}, \textit{User Reviews}, \textit{Search Context}, \textit{Conversion Rate}, \textit{Locations}, \textit{Click Through Rate} for 1000 hotels (say). Can you predict the performance on 1000 other unseen hotels? 
+\newline
+\vspace{1pt}\
+\newline
+\textbf{Possible Cause of Rejection:} Dove head-first into a very crude machine-learning approach without clarifying the metrics, objectives etc. Should have taken more time and prepared the groundwork for building up the case study. Due to lack of awareness, the discussion went quite a bit in circles without making any significant advancements towards the solution idea.
+
+
+\section{KLA Internship Interview Experience}
+\textbf{Role:} Optics Expert with PINNs Experience
+\newline
+\textbf{Personal View}: Mainly a role for a physicist with good grasp on electromagnetism
+\newline
+\textbf{Status:} Shortlisted through online test. Rejected in the first round.
+\newline
+\textbf{Interview Mode:} Physical (OCCAP)
+\vspace{10pt}
+\newline
+\underline{\textbf{Interview Description}}
+\newline
+After a mutual introduction I was told straight away that my resume did not match what they were looking for. Interviewer still asked a few questions from advanced mathematics \& basic physics to respect the spirit of the interview. For example:
+
+\begin{itemize}
+    \item Can you please state the Maxwell's Laws?
+    \item How do you solve such equations?
+    \item Are you familiar with Fourier Optics?
+    \item Do you know about the Heine-Borel Theorem?
+    \item Can you please explain the Bolzano-Weierstrass Theorem?
+\end{itemize}
+
+We parted ways on good terms afterwards.
+
+\textbf{Cause of Rejection:} Severe background mismatch.
+
+
+\end{document}
